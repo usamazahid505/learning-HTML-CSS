@@ -4,22 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Positions</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <style>
-      div {
-        width: 300px;
-        height: 300px;
-        background: dodgerblue;
-        box-shadow: 10px 10px 30px grey;
-        margin: 10px 10px;
+      body {
+        margin: 10px;
+      }
+      .boxes {
+        border: 3px solid lightgrey;
+        /* position: relative; */
+      }
+      .box-1 {
+        width: 10rem;
+        height: 10rem;
+        background-color: yellow;
+        margin-bottom: 10px;
+      }
+      /* relative to its normal position */
+      .box-2 {
+        width: 10rem;
+        height: 10rem;
+        background-color: green;
+        margin-bottom: 10px;
+        position: relative;
+        bottom: 2rem;
+        left: 5rem;
+        z-index: 0;
+      }
+
+      .box-3 {
+        width: 10rem;
+        height: 10rem;
+        background-color: dodgerblue;
+        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
-    <div>
-      <h1>Heading</h1>
+    <div class="boxes">
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+      <div class="box-3"></div>
     </div>
+    <h1>Relative Position</h1>
+    <p>
+      Ralltive position is always move to its normal position and other elements
+      are not effected by using the relative position.Div
+      <b>box-2</b> is the example
+    </p>
+
+    <h1>z-index</h1>
+    <p>
+      Z-index is used in the SS to overlap the things.It has 2 values (0,1) or
+      (99999)
+    </p>
+
+    <h1>Absolute Position</h1>
+    <p>
+      Absolute position is always move to its parent container or element and
+      other elements are affected by its position.Div <b>box-1</b> is the
+      example
+    </p>
+    <h1>Fixed Position</h1>
+    <p>Fixes position is relative to its viewport...</p>
   </body>
 </html>
