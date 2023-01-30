@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating & Positioning</title>
+    <style>
+      .avatar {
+        width: 10rem;
+        height: 10rem;
+        background-color: dodgerblue;
+        float: left;
+        margin-right: 0.5rem;
+      }
+      .clearfix {
+        clear: both;
+      }
+
+      /* 3rd technique to add overflow property...  */
+      .tweet {
+        border: 3px solid grey;
+        overflow: auto;
+      }
+      /* 1st technique to add empty div after avatar class div. */
+      /* 2nd technique to overcome spacing issue with Floating Property by using after pusedo element. */
+      /* .tweet::after{
+        content: '';
+        display: block;
+        clear: both;
+      } */
+      
+    </style>
+  </head>
+  <body>
+    <article class="tweet">
+      <div class="avatar"></div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, iste?
+      </p>
+      <!-- <div class="clearfix"></div> -->
+      
+      </p>
+    </article>
+    <h1>Explination of Floating Property.</h1>
+    <p>Floating property is used in the CSS to position the elements.Floting values with 'right', "left" etc.</p>
+    <p>in this example we show some spacing issues with the floating property.Floating property is old technique to position the elements.Now we use to position the elements with the FlexBox nad Grid techniques.</p>
+  </body>
+</html>
