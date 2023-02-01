@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Quries</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .box {
+        background-color: orangered;
+        padding: 1rem;
+      }
+      .box:nth-last-of-type(2) {
+        background-color: brown;
+      }
+      @media screen and (min-width: 600px) {
+        .container {
+          display: flex;
+          flex-direction: row;
+        }
+        .box {
+          background-color: dodgerblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        vitae placeat excepturi. Fuga labore autem debitis inventore iste porro
+        facilis laudantium. Quasi harum velit fugiat.Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Reiciendis vitae placeat excepturi. Fuga
+        labore autem debitis inventore iste porro facilis laudantium. Quasi
+        harum velit fugiat.
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        vitae placeat excepturi. Fuga labore autem debitis inventore iste porro
+        facilis laudantium. Quasi harum velit fugiat.Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Reiciendis vitae placeat excepturi. Fuga
+        labore autem debitis inventore iste porro facilis laudantium. Quasi
+        harum velit fugiat.
+      </div>
+    </div>
+  </body>
+</html>
